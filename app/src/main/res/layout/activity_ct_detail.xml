@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvCourseName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Course Name"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="32dp"/>
+
+    <EditText
+        android:id="@+id/etCt1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter CT-1 Mark"
+        app:layout_constraintTop_toBottomOf="@id/tvCourseName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etCt2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter CT-2 Mark"
+        app:layout_constraintTop_toBottomOf="@id/etCt1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+
+    <EditText
+        android:id="@+id/etCt3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter CT-3 Mark"
+        app:layout_constraintTop_toBottomOf="@id/etCt2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/etCt4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter CT-4 Mark"
+        app:layout_constraintTop_toBottomOf="@id/etCt3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Best 3 Average"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/etCt4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
